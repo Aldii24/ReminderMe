@@ -46,6 +46,9 @@ export const getTasks = async (collectionId: number) => {
       where: {
         collectionId,
       },
+      orderBy: {
+        createdAt: "asc",
+      },
     });
 
     if (!tasks) return [];

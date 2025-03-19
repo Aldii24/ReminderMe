@@ -46,7 +46,7 @@ const TaskList = ({ tasks }: { tasks: any }) => {
           {tasks.name}
         </Label>
         {tasks.dueTime && (
-          <span className="text-xs dark:text-muted text-gray-500">
+          <span className="text-xs dark:text-gray-500 text-gray-600">
             {tasks.dueTime.toLocaleDateString("id-ID", {
               year: "numeric",
               month: "short",

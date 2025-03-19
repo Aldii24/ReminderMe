@@ -228,6 +228,7 @@ const CollectionCard = ({ collection }: any) => {
                                 <Input
                                   {...field}
                                   type="date"
+                                  placeholder="Select a date"
                                   value={
                                     field.value
                                       ? field.value.toISOString().split("T")[0]
